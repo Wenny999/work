@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List</title>
+</head>
+<body>
+<h1>我的</h1>
+<table border="1">
+    <tr>
+        <td>姓名</td>
+        <td>电话</td>
+        <td>地址</td>
+        <td>邮箱</td>
+        <td>QQ</td>
+        <td>操作1</td>
+        <td>操作2</td>
+    </tr>
+    <tr>
+        <td>naxy</td>
+        <td>18964</td>
+        <td>雁北园</td>
+        <td>12345@qq.com</td>
+        <td>8794562</td>
+        <td><a href="javascript:void(0);" onclick="deleteTr(this);">删除</a></td>
+        <td><button type="button" onclick="check('');">编辑</button></td>
+    </tr>
+    <tr>
+        <td>naxy</td>
+        <td>18964</td>
+        <td>雁北园</td>
+        <td>12345@qq.com</td>
+        <td>8794562</td>
+        <td><a href="javascript:void(0);" onclick="deleteTr(this);">删除</a></td>
+        <td><button type="button" onclick="check('');">编辑</button></td>
+    </tr>
+</table>
+<a href="addition.html">添加</a>
+<script>
+    function deleteTr(object) {
+        var table=object.parentNode.parentNode.parentNode;
+        var tr=object.parentNode.parentNode;
+        table.removeChild(tr);
+    }
+</script>
+</body>
+</html>
